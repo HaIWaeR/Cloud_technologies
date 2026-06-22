@@ -36,7 +36,7 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
-![ 1 ](/screenshots/CreatingMirror.png)
+![1](/screenshots/CreatingMirror.png)
 
 Перезапускаем докер 
 ```bash
