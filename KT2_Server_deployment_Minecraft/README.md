@@ -106,7 +106,7 @@ docker logs -f minecraft-server
 ```bash 
 ip a | grep inet
 ```
-![](KT2_Server_deployment_Minecraft/screenshots/SearchIp.png)
+![7](KT2_Server_deployment_Minecraft/screenshots/SearchIp.png)
 
 в моём случае `192.168.2.100`
 
