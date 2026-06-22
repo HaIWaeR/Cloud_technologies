@@ -36,7 +36,7 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
-![ 1 ](Server_deployment_Minecraft/screenshots/CreatingMirror.png)
+![ 1 ](KT2_Server_deployment_Minecraft/screenshots/CreatingMirror.png)
 
 Перезапускаем докер 
 ```bash
@@ -55,7 +55,7 @@ docker info | grep -A 2 "Registry Mirrors"
   https://mirror.gcr.io/
 ```
 
-![ 2 ](Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
+![ 2 ](KT2_Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
 
 # Качаем образ Minecrfat 
 
@@ -63,7 +63,7 @@ docker info | grep -A 2 "Registry Mirrors"
 docker pull itzg/minecraft-server:latest
 ```
 
-![](Server_deployment_Minecraft/InstallingImage.png)
+![](KT2_Server_deployment_Minecraft/screenshots/InstallingImage.png)
 
 # Запускаем сервер
 
@@ -80,14 +80,14 @@ docker run -d \
   itzg/minecraft-server
 ```
 
-![](Server_deployment_Minecraft/StartingServer.png)
+![](KT2_Server_deployment_Minecraft/screenshots/StartingServer.png)
 
 Проверяем запустился ли контейнер 
 ```bash
 docker ps
 ```
 
-![](Server_deployment_Minecraft/ContainerInspection.png)
+![](KT2_Server_deployment_Minecraft/screenshots/ContainerInspection.png)
 
 # Проверка логов сервера 
 
@@ -95,18 +95,18 @@ docker ps
 docker logs -f minecraft-server
 ```
 
-![](Server_deployment_Minecraft/CheckLogsOne.png)
+![](KT2_Server_deployment_Minecraft/screenshots/CheckLogsOne.png)
 
 Ждём появления строки 
 `Done (х.ххs)! For help, type "help"`
 
-![](Server_deployment_Minecraft/CheckLogsTwo.png)
+![](KT2_Server_deployment_Minecraft/screenshots/CheckLogsTwo.png)
 
 Узнаём наш ip 
 ```bash 
 ip a | grep inet
 ```
-![](Server_deployment_Minecraft/SearchIp.png)
+![](KT2_Server_deployment_Minecraft/screenshots/SearchIp.png)
 
 в моём случае `192.168.2.100`
 
