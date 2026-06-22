@@ -36,6 +36,8 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
+![Создание зеркала](screenshots/CreatingMirror.png)
+
 Перезапускаем докер 
 ```bash
 sudo systemctl restart docker
