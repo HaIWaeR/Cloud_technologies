@@ -36,7 +36,7 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
-![](KT2 Server_deployment_Minecraft/screenshots/CreatingMirror.png)
+![ 1 ](Server_deployment_Minecraft/screenshots/CreatingMirror.png)
 
 Перезапускаем докер 
 ```bash
@@ -55,7 +55,7 @@ docker info | grep -A 2 "Registry Mirrors"
   https://mirror.gcr.io/
 ```
 
-![](Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
+![ 2 ](Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
 
 # Качаем образ Minecrfat 
 
