@@ -36,7 +36,7 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
-![Создание зеркала](Server_deployment_Minecraft/screenshots/CreatingMirror.png)
+![](Server_deployment_Minecraft/screenshots/CreatingMirror.png)
 
 Перезапускаем докер 
 ```bash
@@ -54,14 +54,16 @@ docker info | grep -A 2 "Registry Mirrors"
   https://dockerhub.timeweb.cloud/
   https://mirror.gcr.io/
 ```
-![Перезагрузка и отображение зеркала](Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
+
+![](Server_deployment_Minecraft/screenshots/RestartAndCheck.png)
 
 # Качаем образ Minecrfat 
 
 ```bash
 docker pull itzg/minecraft-server:latest
 ```
-![Устанвока образа](Server_deployment_Minecraft/InstallingImage.png)
+
+![](Server_deployment_Minecraft/InstallingImage.png)
 
 # Запускаем сервер
 
@@ -78,32 +80,33 @@ docker run -d \
   itzg/minecraft-server
 ```
 
-![Запускаем сервер](Server_deployment_Minecraft/StartingServer.png)
+![](Server_deployment_Minecraft/StartingServer.png)
 
 Проверяем запустился ли контейнер 
 ```bash
 docker ps
 ```
 
-![Проверка запуска контейнера](Server_deployment_Minecraft/ContainerInspection.png)
+![](Server_deployment_Minecraft/ContainerInspection.png)
 
 # Проверка логов сервера 
 
 ```bash 
 docker logs -f minecraft-server
 ```
-![Проверка логов](Server_deployment_Minecraft/CheckLogsOne.png)
+
+![](Server_deployment_Minecraft/CheckLogsOne.png)
 
 Ждём появления строки 
 `Done (х.ххs)! For help, type "help"`
 
-![Проверка Done ](Server_deployment_Minecraft/CheckLogsTwo.png)
+![](Server_deployment_Minecraft/CheckLogsTwo.png)
 
 Узнаём наш ip 
 ```bash 
 ip a | grep inet
 ```
-![Смотрим ip ](Server_deployment_Minecraft/SearchIp.png)
+![](Server_deployment_Minecraft/SearchIp.png)
 
 в моём случае `192.168.2.100`
 
