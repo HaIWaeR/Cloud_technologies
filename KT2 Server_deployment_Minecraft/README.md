@@ -36,7 +36,7 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
-![](Server_deployment_Minecraft/screenshots/CreatingMirror.png)
+![](KT2 Server_deployment_Minecraft/screenshots/CreatingMirror.png)
 
 Перезапускаем докер 
 ```bash
